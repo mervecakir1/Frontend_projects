@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 7px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    color: aliceblue;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-align: center;
+    background-color: #333;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    padding: 1.6rem 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both
+}
+
+header {
+    height: 46rem;
+}
+
+header .begin-image {
+    position: absolute;
+
+    background-size: cover;
+    background-position: center;
+    height: 46rem;
+    width: 100%;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+header h1 {
+    padding: 12rem;
+    padding-bottom: 0;
+}
+
+.button {
+    display: inline-block;
+    background-color: #e7d6ae;
+    color: rgb(57, 24, 7);
+    border: 1px solid rgb(240, 166, 77);
+    padding: 1.6rem 3.2rem;
+    margin: .5rem 0;
+    transition: all 0.7;
+}
+
+.button:hover {
+    background-color: rgb(57, 24, 7);
+    color: white;
+}
+
+#section-a {
+    background-color: #e7d6ae;
+    color: rgb(216, 141, 49);
+    padding: 3.2rem;
+}
+
+.begin-image {
+    background-size: 100% 100%;
+    box-shadow: 20px 20px 10px gray;
+    animation: slider 10s linear infinite;
+}
+
+@keyframes slider {
+    0% {
+        background-image: url(images/photo2.jpg);
+    }
+
+    30% {
+        background-image: url(images/photo13.jpg);
+    }
+
+    60% {
+        background-image: url(images/photo14.jpg);
+    }
+
+    100% {
+        background-image: url(images/photo11.jpg);
+    }
+
+}
+
+#section-b {
+    padding: 2rem;
+}
+
+
+#section-b li:nth-child(1) {
+
+    background-color: rgb(12, 4, 37);
+    padding: 2rem;
+    color: rgb(33, 170, 212);
+
+}
+
+#section-b ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    /* İçerikleri taşarsa alt satıra geç */
+    justify-content: space-between;
+    /* İçerikleri aralarında boşluk bırakarak yerleştir */
+    padding: 0;
+    margin: 0;
+}
+
+#section-b li {
+    flex: 1 1 30%;
+    /* Her li öğesi eşit genişlikte olacak ve 30% oranında genişleyecek */
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    /* İçerikleri dikey hizala */
+    justify-content: space-between;
+    /* Metin ve görsellerin alanı eşit kullanmasını sağla */
+
+    padding: 2rem;
+    box-sizing: border-box;
+
+}
+
+#section-b li:nth-child(2) {
+    background-color: rgb(5, 27, 6);
+    padding: 2rem;
+    color: rgb(108, 226, 106);
+}
+
+#section-b li:nth-child(3) {
+    background-color: orange;
+    padding: 2rem;
+    color: #50380f
+}
+
+#section-b li:nth-child(4) {
+    background-color: #e7d6ae;
+    padding: 2rem;
+    color: rgb(216, 141, 49);
+}
+
+#section-b li:nth-child(5) {
+    background-color: #b1abe5;
+    padding: 2rem;
+    color: #0d33c9;
+}
+
+#section-b li:nth-child(6) {
+    background-color: #e2a22a;
+    padding: 2rem;
+    color: #553206;
+}
+
+#section-f {
+    padding: 5rem;
+    background-color: rgb(59, 4, 4);
+    color: wheat;
+}
+
+#section-h .box {
+    padding: 5rem;
+}
+
+#section-h .box:first-child {
+    background-color: darkslategray;
+}
+
+footer {
+    padding: 4rem;
+    background-color: antiquewhite;
+    color: rgb(216, 27, 59);
+}
+
+footer a {
+    font-weight: 800;
+    font-style: oblique;
+    color: rgb(216, 27, 59);
+    ;
+}
+
+.turn-to-top {
+    display: none;
+    position: fixed;
+    bottom: 16px;
+    right: 28px;
+    background-color: rgb(91, 78, 78);
+    border: 2px solid black;
+}
+
+.turn-to-top>a {
+    display: block;
+    padding: 16px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.bottom .turn-to-top {
+    display: block;
+}
+
+@media screen and (max-width:800px) {
+    html {
+        font-size: 10px;
+    }
+
+    #section-b li {
+        width: 28%;
+        margin: 1%;
+        flex: 1 1 100%;
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1200px) {
+
+    html {
+        font-size: 12px;
+
+    }
+
+    #section-b li {
+        flex: 1 1 48%;
+        margin: 1%;
+        font-size: 1.8rem;
+    }
+
+    .box {
+        width: 50%;
+        float: left;
+    }
+
+    #green {
+        height: 600px;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    html {
+        font-size: 14px;
+    }
+
+    #section-b li {
+        flex: 1 1 30%;
+        margin: 1%;
+        font-size: 2rem;
+    }
+}

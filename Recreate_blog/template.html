@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog Template</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *,
+        *::after,
+        *::before {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Lato", sans-serif;
+            background-color: #f1f1f1;
+        }
+
+        mark {
+            background-color: black;
+            color: white;
+            padding: .2rem .5rem;
+        }
+
+        header {
+            padding: 2rem;
+            margin: 2rem 0 3rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            text-transform: uppercase;
+            margin-top: 0;
+
+        }
+
+        main {
+            display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+
+        @media (max-width:990px) {
+            main {
+                flex-direction: column;
+            }
+        }
+
+        .col1 {
+
+            flex: 2;
+            margin: 0 1rem;
+        }
+
+        .col2 {
+
+            flex: 1;
+            margin: 0 1rem;
+        }
+
+        footer {
+            height: 150px;
+            background-color: #616161;
+            margin-top: 0.4rem;
+        }
+
+        .box {
+            background-color: white;
+            margin-bottom: 2rem;
+            min-height: 150px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+        }
+
+        .box-padding {
+            padding-bottom: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>My Blog</h1>
+        <div class="site-desc"> Welcome to the blog of <mark>unknown</mark></div>
+    </header>
+    <main>
+        <div class="col1">
+            <div class="box box-padding">
+                <div class="image-container">
+                    <img src="images/woods.jpg" alt="">
+                </div>
+                <div class="text-body">
+                    <h2>TITLE HEADING</h2>
+                    <p>Title description,<span class="light"> April 7, 2014</span> </p>
+                    <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem
+                        euismod
+                        placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi
+                        non
+                        congue ullam corper. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta
+                        lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                </div>
+                <div class="button-container">
+                    <button class="read-more-btn">READ MORE
+                        <i class="fa-solid fa-angles-right"></i>
+                    </button>
+                    <div class="show">
+                        <p class="bar"> <b> Comments </b></p>
+                        <div class="square"> 0</div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="box box-padding">
+                <div class="image-container">
+                    <img src="images/bridge.jpg" alt="">
+                </div>
+                <div class="text-body">
+                    <h2>BLOG ENTRY </h2>
+                    <p>Title description, <span class="light">April 2, 2014</span></p>
+                    <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem
+                        euismod
+                        placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi
+                        non
+                        congue ullam corper. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta
+                        lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                </div>
+                <div class="button-container">
+                    <button class="read-more-btn">READ MORE <i class="fa-solid fa-angles-right"></i></button>
+                    <div class="show">
+                        <p class="bar"> <b> Comments </b></p>
+                        <div class="circle">2</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col2">
+            <div class="box">
+                <div class="image-container">
+                    <img src="images/avatar_g.jpg" alt="">
+                </div>
+                <div class="text-body">
+                    <h2>My Name</h2>
+                    <p>Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a
+                        interest of lorem ipsum and mauris neque quam blog. I want to share my world with you.</p>
+                </div>
+            </div>
+            <div class="box">
+                <div id="title">
+                    <h4> Popular Posts</h4>
+                </div>
+                <ul class="menu">
+                    <li class="list">
+                        <div class="item-container">
+                            <img src="images/workshop.jpg" alt="" class="list-img">
+                            <div class="list-container">
+                                <span class="list-title"> Lorem </span>
+                                <span class="list-description">Sed mattis nunc</span>
+                            </div>
+                        </div>
+                    </li>
+
+                    <br>
+                    <li class="list">
+                        <div class="item-container">
+                            <img src="images/gondol.jpg" alt="" class="list-img">
+                            <div class="list-container">
+                                <span class="list-title"> Ipsum </span>
+
+                                <span class="list-description">Praes tinci sed</span>
+                            </div>
+                        </div>
+
+                    </li>
+                    <br>
+                    <li class="list">
+                        <div class="item-container">
+                            <img src="images/skies.jpg" alt="" class="list-img">
+                            <div class="list-container">
+                                <span class="list-title"> Dorum </span>
+                                <span class="list-description">Ultricies congue</span>
+                            </div>
+                        </div>
+                    </li>
+                    <br>
+                </ul>
+            </div>
+            <div class="box">
+                <div id="title">
+                    <h4> Tags</h4>
+                </div>
+                <div>
+                    <p class="tags-item">
+                        <span class="tags">
+                            <button class="btn-tags" id="black">Travel</button>
+                            <button class="btn-tags">New York</button>
+                            <button class="btn-tags">London</button>
+                            <button class="btn-tags">IKEA</button>
+                            <button class="btn-tags">NORWAY</button>
+                            <button class="btn-tags">DIY</button>
+                            <button class="btn-tags">Ideas</button>
+                            <button class="btn-tags">Baby</button>
+                            <button class="btn-tags">Family</button>
+                            <button class="btn-tags">News</button>
+                            <button class="btn-tags">Clothing</button>
+                            <button class="btn-tags">Shopping</button>
+                            <button class="btn-tags">Sports</button>
+                            <button class="btn-tags">Games</button>
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="last-btn">
+                <span>
+                    <button class="larger-button lights " disabled>Previous</button>
+                    <button class="larger-button dark">Next <i class="fa-solid fa-angles-right"></i> </button>
+                </span>
+            </div>
+            <p>
+                Powered by <span class="name">mervecakir </span>
+            </p>
+        </div>
+
+    </footer>
+</body>
+
+</html>
